@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using AngrySquirrel.Netduino.Utilities;
+using AngrySquirrel.Netduino.Utilities.Extensions;
 using Microsoft.SPOT;
 
 namespace Example
@@ -9,20 +10,26 @@ namespace Example
     /// </summary>
     public class Program
     {
+        #region Public Methods and Operators
+
         /// <summary>
         /// Program entry point
         /// </summary>
         public static void Main()
         {
-            var bytes = BitHelper.ToByteArray(1000, ByteOrder.LittleEndian);
+            const int value = 0x05F5E100;
+            var bytes = ByteHelper.ToByteArray(value);
+            bytes = ByteHelper.SwapEndianess(bytes);
 
             var stringBuilder = new StringBuilder();
             foreach (var @byte in bytes)
             {
-                stringBuilder.Append(BitHelper.ToBitString(@byte));
+                stringBuilder.Append(@byte.ToBitString());
             }
 
             Debug.Print(stringBuilder.ToString());
         }
+
+        #endregion
     }
 }
