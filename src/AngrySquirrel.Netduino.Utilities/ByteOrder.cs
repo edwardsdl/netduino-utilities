@@ -8,12 +8,12 @@ namespace AngrySquirrel.Netduino.Utilities
         /// <summary>
         /// The lack of an endianness
         /// </summary>
-        None,
+        None, 
 
         /// <summary>
         /// The most significant byte is stored at the lowest byte address
         /// </summary>
-        BigEndian,
+        BigEndian, 
 
         /// <summary>
         /// The most significant byte is stored at the highest byte address

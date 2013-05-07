@@ -46,9 +46,9 @@ namespace AngrySquirrel.Netduino.Utilities
         {
             var bytes = new[]
                 {
-                    (byte)(value & 0xFF),
-                    (byte)((value >> 8) & 0xFF),
-                    (byte)((value >> 16) & 0xFF),
+                    (byte)(value & 0xFF), 
+                    (byte)((value >> 8) & 0xFF), 
+                    (byte)((value >> 16) & 0xFF), 
                     (byte)((value >> 24) & 0xFF)
                 };
 
@@ -73,13 +73,13 @@ namespace AngrySquirrel.Netduino.Utilities
         {
             var bytes = new[]
                 {
-                    (byte)(value & 0xFF),
-                    (byte)((value >> 8) & 0xFF),
-                    (byte)((value >> 16) & 0xFF),
-                    (byte)((value >> 24) & 0xFF),
-                    (byte)((value >> 32) & 0xFF),
-                    (byte)((value >> 40) & 0xFF),
-                    (byte)((value >> 48) & 0xFF),
+                    (byte)(value & 0xFF), 
+                    (byte)((value >> 8) & 0xFF), 
+                    (byte)((value >> 16) & 0xFF), 
+                    (byte)((value >> 24) & 0xFF), 
+                    (byte)((value >> 32) & 0xFF), 
+                    (byte)((value >> 40) & 0xFF), 
+                    (byte)((value >> 48) & 0xFF), 
                     (byte)((value >> 56) & 0xFF)
                 };
 
