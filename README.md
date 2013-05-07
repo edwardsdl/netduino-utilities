@@ -6,7 +6,7 @@ You can download the latest version of this library on NuGet. To install `netdui
 
     PM> Install-Package netduino-utilities
 
-More information about NuGet package is avaliable at https://nuget.org/packages/netduino-utilities.
+More information about NuGet package is avaliable at https://nuget.org/packages/AngrySquirrel.Netduino.Utilities/.
 
 ##Examples
 ###Helper Methods
