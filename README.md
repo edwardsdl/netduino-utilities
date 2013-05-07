@@ -4,7 +4,7 @@ A collection of methods for handling common tasks on the Netduino.
 ##Download
 You can download the latest version of this library on NuGet. To install `netduino-utilities`, run the following command from the package manager console:
 
-    PM> Install-Package netduino-utilities
+    PM> Install-Package AngrySquirrel.Netduino.Utilities
 
 More information about NuGet package is avaliable at https://nuget.org/packages/AngrySquirrel.Netduino.Utilities/.
 
